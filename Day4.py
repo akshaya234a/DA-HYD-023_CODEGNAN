@@ -100,7 +100,7 @@ else:
     age=18-age
     print("you don't have eligibility as your age is",age,"years less")
     print("you need to wait for more",age,"years")
-'''
+
 #same case let's use only nested --> if,else
 age=int(input("Enter the age:"))
 if age>0:
@@ -113,7 +113,7 @@ if age>0:
         print("you need to wait for more",age,"years")
 else:
     print("you have entered -ve values/zero enter only +ve")
-'''
+
 task:  student marks and grade analyzer
 90-100 --> 'A'
 80-89 --> 'B'
@@ -123,9 +123,51 @@ task:  student marks and grade analyzer
 #also -ve cases should not be allowed and marks shouldn't be greater than 100
 
 
+marks = int(input("Enter marks:"))
+if marks < 0:
+    print("-ve cases should not be allowed and marks shouldn't be greater than 100")
+elif marks >= 90:
+    print("A")
+elif marks >= 80:
+    print("B")
+elif marks >= 70:
+    print("B")
+elif marks >=60:
+    print("D")
+else:
+    print("Fail")                
 
 
+marks = int(input("Enter marks:"))
+if marks < 0:
+    print("-ve cases should not be allowed and marks shouldn't be greater than 100")
+if marks >= 90:
+    print("A")
+if marks >= 80:
+    print("B")
+if marks >= 70:
+    print("B")
+if marks >=60:
+    print("D")
+else:
+    print("Fail")
+'''               
 
+
+marks = int(input("Enter marks:"))
+if marks > 0 and marks <=100:
+    if marks >= 90:
+        print("A")
+    if marks >= 80 and marks <=89:
+        print("B")
+    if marks >= 70 and marks <=79:
+        print("C")
+    if marks >=60 and marks <=69:
+        print("D")
+    if marks < 60: 
+        print("Fail")
+else:
+    print("Enter only +ve values greater than 0 and less than 100")
 
 
 
