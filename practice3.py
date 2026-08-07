@@ -46,4 +46,11 @@ while current_attempt < max_attempt:
         current_attempt=current_attempt+1
 else:
     print("Account locked!")      
+
+#Movies
+movies=input().split()
+i=1
+for movie in movies:
+    print(i,".",movie,sep="")
+    i=i+1
     
