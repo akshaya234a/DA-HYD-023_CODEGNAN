@@ -47,7 +47,7 @@ while current_attempt < max_attempt:
 else:
     print("Account locked!")      
 
-#Movies
+#Movies should return with index
 movies=input().split()
 i=1
 for movie in movies:
